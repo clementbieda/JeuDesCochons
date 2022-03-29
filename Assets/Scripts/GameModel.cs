@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GameModel
 {
-    // Start is called before the first frame update
-    void Start()
+    public int[] _faces;
+
+    public GameModel()
     {
-        
+        for (int i = 0; i < 6; i++)
+        {
+            _faces[i] = i + 1;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
