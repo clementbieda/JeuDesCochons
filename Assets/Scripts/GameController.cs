@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     public void ShotJ1()
     {
         Debug.Log("Joueur 1 qui tire !");
+
     }
 
     public void ShotJ2()

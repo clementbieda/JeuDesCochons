@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreJ1View : MonoBehaviour  
+public class ScoreJ1View : MonoBehaviour
 {
 
     [SerializeField] public Image ScoreJ1Image;
@@ -15,6 +15,11 @@ public class ScoreJ1View : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    public int Score()
     {
         
     }
