@@ -13,5 +13,23 @@ public class GameModel
         }
     }
 
+    public void VerifyPaire()
+    {
 
+    }
+
+    public void VerifyBrelan()
+    {
+
+    }
+
+    public void VerifySuite()
+    {
+
+    }
+
+    public void VerifyCochon()
+    {
+
+    }
 }
