@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class GameModel
+public class NewBehaviourScript : MonoBehaviour
 {
-    public int[] _faces;
-
-    public GameModel()
+    // Start is called before the first frame update
+    void Start()
     {
-        for (int i = 0; i < 6; i++)
-        {
-            _faces[i] = i + 1;
-        }
+        
     }
 
+<<<<<<< HEAD
     public void VerifyPaire()
     {
 
@@ -31,5 +29,11 @@ public class GameModel
     public void VerifyCochon()
     {
 
+=======
+    // Update is called once per frame
+    void Update()
+    {
+        
+>>>>>>> parent of b216714 (Continuation du projet : Rajout de boutons, du GameController, De tous les scripts nécéssaires, et de quelques éléments d'UI)
     }
 }
