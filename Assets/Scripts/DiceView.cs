@@ -1,9 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiceView : MonoBehaviour
+public class DiceView : MonoBehaviour, IObserver<int>
 {
+    public void OnCompleted()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnError(Exception error)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnNext(int value)
+    {
+        throw new NotImplementedException();
+    }
+
     // Start is called before the first frame update
     void Start()
     {

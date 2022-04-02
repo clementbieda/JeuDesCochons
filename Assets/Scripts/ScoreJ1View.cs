@@ -21,6 +21,6 @@ public class ScoreJ1View : MonoBehaviour
 
     public int Score()
     {
-        
+        return 0;
     }
 }

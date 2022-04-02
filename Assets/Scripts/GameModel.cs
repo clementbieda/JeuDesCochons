@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class GameModel
 {
-    public int[] _faces;
 
     public int _premierDé;
     public int _secondDé;
@@ -30,6 +29,8 @@ public class GameModel
             _premierDé = rand.Next(1, 7);
             _secondDé = rand.Next(1, 7);
             _troisiemeDé = rand.Next(1, 7);
+
+            
         }
         else
         {
@@ -38,7 +39,7 @@ public class GameModel
             _secondDé = rand.Next(1, 7);
             _troisiemeDé = rand.Next(1, 7);
         }
-        //C'est le principe du tour par tour, on change de joueur 
+        
         
     }
 
@@ -98,17 +99,32 @@ public class GameModel
 
     public void VerifyCochon()
     {
-        if ((_premierDé != _secondDé && _premierDé != _troisiemeDé && _secondDé != _troisiemeDé)
+        if (_joueur1)
+        {
+            if ((_premierDé != _secondDé && _premierDé != _troisiemeDé && _secondDé != _troisiemeDé)
          && (_premierDé == 1 || _premierDé == 3 || _premierDé == 6)
          && (_secondDé == 1 || _secondDé == 3 || _secondDé == 6)
          && (_troisiemeDé == 1 || _troisiemeDé == 3 || _troisiemeDé == 6))
-        {
-            _scoreJ1 += 20;
+            {
+                _scoreJ1 += 20;
+            }
         }
+        else
+        {
+            if ((_premierDé != _secondDé && _premierDé != _troisiemeDé && _secondDé != _troisiemeDé)
+         && (_premierDé == 1 || _premierDé == 3 || _premierDé == 6)
+         && (_secondDé == 1 || _secondDé == 3 || _secondDé == 6)
+         && (_troisiemeDé == 1 || _troisiemeDé == 3 || _troisiemeDé == 6))
+            {
+                _scoreJ2 += 20;
+            }
+        }
+        
     }
 
     public void SwitchPlayer()
     {
+        //C'est le principe du tour par tour, on change de joueur 
         _joueur1 = !_joueur1;
     }
 
